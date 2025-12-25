@@ -48,7 +48,7 @@ header {
 
 /* Header Top Section - Logo & Titel */
 .header-top {
-  background: #1E5275;
+  background: #134872;
   border-bottom: 4px solid var(--gold-accent);
   padding: 1.5rem 2rem;
   transition: all 0.3s ease;
@@ -83,7 +83,7 @@ header {
 
 /* Header Navigation Section */
 .header-nav {
-  background: #1E5275;
+  background: #134872;
   transition: all 0.3s ease;
 }
 
@@ -137,7 +137,6 @@ header.header-scrolled .header-nav {
   top: 0;
   left: 0;
   right: 0;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
 }
 
 /* Main Content */
