@@ -3,16 +3,22 @@
  * Hanterar klickbara personkort på ledningssidan och shrinking header
  */
 
-// Shrinking Header vid scroll
+// Sticky Navigation - Dölj header-top vid scroll, behåll endast nav
 document.addEventListener('DOMContentLoaded', function() {
   const header = document.querySelector('header');
+  const headerTop = document.querySelector('.header-top');
   const scrollThreshold = 50;
 
   function handleScroll() {
+    // När användaren scrollar ner mer än threshold, dölj header-top
     if (window.scrollY > scrollThreshold) {
       header.classList.add('header-scrolled');
+      // Justera body padding när header-top döljs
+      document.body.style.paddingTop = '60px';
     } else {
       header.classList.remove('header-scrolled');
+      // Återställ body padding
+      document.body.style.paddingTop = '220px';
     }
   }
 
