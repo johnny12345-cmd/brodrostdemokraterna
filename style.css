@@ -33,7 +33,7 @@ body {
   color: var(--text-dark);
   line-height: 1.8;
   font-size: 18px;
-  padding-top: 220px; /* Kompensera för fixerad stacked header */
+  padding-top: 250px; /* Kompensera för fixerad stacked header med större logo */
 }
 
 /* Header & Navigation - Stacked Design */
@@ -64,9 +64,8 @@ header {
 }
 
 .logo {
-  height: 120px;
+  height: 150px;
   width: auto;
-  max-width: 120px;
   object-fit: contain;
   transition: all 0.3s ease;
 }
@@ -555,7 +554,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
   body {
-    padding-top: 180px; /* Mer utrymme för stacked header */
+    padding-top: 200px; /* Mer utrymme för stacked header med större logo */
   }
 
   .header-top {
@@ -568,8 +567,7 @@ footer {
   }
 
   .logo {
-    height: 80px;
-    max-width: 80px;
+    height: 100px;
   }
 
   .site-title {
