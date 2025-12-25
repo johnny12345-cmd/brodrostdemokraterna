@@ -64,8 +64,10 @@ header {
 }
 
 .logo {
-  height: 100px;
+  height: 120px;
   width: auto;
+  max-width: 120px;
+  object-fit: contain;
   filter: drop-shadow(0 3px 6px rgba(0,0,0,0.4));
   transition: all 0.3s ease;
 }
@@ -526,7 +528,8 @@ footer {
   }
 
   .logo {
-    height: 70px;
+    height: 80px;
+    max-width: 80px;
   }
 
   .site-title {
