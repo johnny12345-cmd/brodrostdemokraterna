@@ -1,7 +1,36 @@
 /**
  * Brödrostdemokraterna - Interaktivitet
- * Hanterar klickbara personkort på ledningssidan
+ * Hanterar klickbara personkort på ledningssidan och shrinking header
  */
+
+// Shrinking Header vid scroll
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.querySelector('header');
+  const scrollThreshold = 50;
+
+  function handleScroll() {
+    if (window.scrollY > scrollThreshold) {
+      header.classList.add('header-scrolled');
+    } else {
+      header.classList.remove('header-scrolled');
+    }
+  }
+
+  // Lyssna på scroll-event med throttling för bättre prestanda
+  let ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        handleScroll();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  // Kör en gång vid laddning
+  handleScroll();
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     // Hämta alla ledarkort
