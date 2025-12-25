@@ -156,6 +156,65 @@ main {
   background-color: #000;
 }
 
+/* Unmute Button */
+.unmute-btn {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, #2D5580 100%);
+  color: var(--cream-bg);
+  border: 3px solid var(--gold-accent);
+  border-radius: 8px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.unmute-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(135deg, #2D5580 0%, var(--primary-blue) 100%);
+}
+
+.unmute-btn:active {
+  transform: translateY(-1px);
+}
+
+.speaker-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--gold-accent);
+}
+
+/* Toggle between muted and unmuted states */
+.unmute-btn.muted .speaker-sound {
+  display: none;
+}
+
+.unmute-btn.muted .speaker-muted {
+  display: block;
+}
+
+.unmute-btn:not(.muted) .speaker-sound {
+  display: block;
+}
+
+.unmute-btn:not(.muted) .speaker-muted {
+  display: none;
+}
+
+.unmute-text {
+  letter-spacing: 0.5px;
+}
+
 .motto-section {
   background: linear-gradient(to bottom, var(--dark-cream), var(--cream-bg));
   padding: 4rem 2rem;
@@ -481,6 +540,22 @@ footer {
   .policy-section h2 {
     margin-left: -1.5rem;
     margin-right: -1.5rem;
+  }
+
+  .unmute-btn {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .speaker-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .unmute-text {
+    display: none;
   }
 }
 

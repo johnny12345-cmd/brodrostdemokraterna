@@ -2,6 +2,9 @@
   <!-- Mörkblå ytterring -->
   <circle cx="100" cy="100" r="95" fill="none" stroke="#1B3A5C" stroke-width="8"/>
 
+  <!-- Vit bakgrund inuti guldringen -->
+  <circle cx="100" cy="100" r="77" fill="#FFFFFF"/>
+
   <!-- Guldring innanför -->
   <circle cx="100" cy="100" r="80" fill="none" stroke="#C89F5D" stroke-width="6"/>
 
