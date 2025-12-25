@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Mörkblå ytterring -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#1B3A5C" stroke-width="8"/>
+
+  <!-- Guldring innanför -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#C89F5D" stroke-width="6"/>
+
+  <!-- Brödrost bas - mörkblå -->
+  <g fill="#1B3A5C">
+    <!-- Brödrost kropp -->
+    <rect x="55" y="80" width="90" height="60" rx="4"/>
+
+    <!-- Brödrost slots (ljusare detaljer) -->
+    <rect x="70" y="55" width="15" height="35" fill="#2D5580" rx="2"/>
+    <rect x="92.5" y="55" width="15" height="35" fill="#2D5580" rx="2"/>
+    <rect x="115" y="55" width="15" height="35" fill="#2D5580" rx="2"/>
+
+    <!-- Brödrost knapp -->
+    <rect x="85" y="145" width="30" height="8" rx="2" fill="#2D5580"/>
+
+    <!-- Dekorativa detaljer på sidan -->
+    <circle cx="63" cy="100" r="3" fill="#2D5580"/>
+    <circle cx="63" cy="115" r="3" fill="#2D5580"/>
+    <circle cx="137" cy="100" r="3" fill="#2D5580"/>
+    <circle cx="137" cy="115" r="3" fill="#2D5580"/>
+  </g>
+
+  <!-- Text 'BD' i mitten med guldstil -->
+  <text x="100" y="115"
+        font-family="'Playfair Display', serif"
+        font-size="36"
+        font-weight="900"
+        fill="#C89F5D"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        stroke="#1B3A5C"
+        stroke-width="1">BD</text>
+</svg>
