@@ -113,3 +113,46 @@ if (heroVideo) {
         }
     });
 }
+
+/**
+ * Unmute/Mute knapp för hero-video
+ */
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('heroVideo');
+    const unmuteBtn = document.getElementById('unmuteBtn');
+    const unmuteText = document.querySelector('.unmute-text');
+
+    if (video && unmuteBtn) {
+        // Sätt initial status (video är muted)
+        unmuteBtn.classList.add('muted');
+
+        // Klickhändelse för unmute-knappen
+        unmuteBtn.addEventListener('click', function() {
+            if (video.muted) {
+                // Slå på ljud
+                video.muted = false;
+                unmuteBtn.classList.remove('muted');
+                if (unmuteText) {
+                    unmuteText.textContent = 'Tysta';
+                }
+                unmuteBtn.setAttribute('aria-label', 'Stäng av ljud');
+            } else {
+                // Slå av ljud
+                video.muted = true;
+                unmuteBtn.classList.add('muted');
+                if (unmuteText) {
+                    unmuteText.textContent = 'Lyssna på budskapet';
+                }
+                unmuteBtn.setAttribute('aria-label', 'Slå på ljud');
+            }
+        });
+
+        // Tangentbordsstöd
+        unmuteBtn.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+    }
+});

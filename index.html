@@ -27,10 +27,18 @@
 
     <main>
         <section class="hero">
-            <video class="hero-video" autoplay muted loop playsinline>
+            <video class="hero-video" id="heroVideo" autoplay muted loop playsinline>
                 <source src="assets/video/valfilm.mp4" type="video/mp4">
                 Din webbläsare stöder inte videouppspelning.
             </video>
+            <button class="unmute-btn" id="unmuteBtn" aria-label="Slå på ljud">
+                <svg class="speaker-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="speaker-base" d="M11 5L6 9H2v6h4l5 4V5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="currentColor"/>
+                    <path class="speaker-muted" d="M23 9l-6 6M17 9l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path class="speaker-sound" d="M15.54 8.46a5 5 0 0 1 0 7.07M18.36 5.64a9 9 0 0 1 0 12.73" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="unmute-text">Lyssna på budskapet</span>
+            </button>
         </section>
 
         <section class="motto-section">
