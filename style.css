@@ -48,7 +48,7 @@ header {
 
 /* Header Top Section - Logo & Titel */
 .header-top {
-  background: linear-gradient(135deg, var(--primary-blue) 0%, #2D5580 100%);
+  background: #1E5275;
   border-bottom: 4px solid var(--gold-accent);
   padding: 1.5rem 2rem;
   transition: all 0.3s ease;
@@ -68,7 +68,6 @@ header {
   width: auto;
   max-width: 120px;
   object-fit: contain;
-  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.4));
   transition: all 0.3s ease;
 }
 
@@ -284,7 +283,51 @@ h3 {
 
 p {
   margin-bottom: 1.5rem;
-  text-align: justify;
+  text-align: left;
+}
+
+/* Bli medlem knapp - Tung, metallisk/kromad design */
+.medlem-btn {
+  display: inline-block;
+  padding: 1.2rem 3rem;
+  background: linear-gradient(180deg, #e0e0e0 0%, #a8a8a8 50%, #7a7a7a 100%);
+  color: var(--text-dark);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 3px solid #505050;
+  border-radius: 6px;
+  box-shadow:
+    0 6px 12px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.medlem-btn:hover {
+  background: linear-gradient(180deg, #f0f0f0 0%, #b8b8b8 50%, #8a8a8a 100%);
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.medlem-btn:active {
+  transform: translateY(0);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn-container {
+  text-align: center;
+  margin: 3rem 0;
 }
 
 /* Politik Page */
