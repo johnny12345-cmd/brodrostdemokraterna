@@ -1,41 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <!-- Mörkblå ytterring -->
-  <circle cx="100" cy="100" r="95" fill="none" stroke="#1B3A5C" stroke-width="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Mörkblå ytterring (yttre cirkel) -->
+  <circle cx="200" cy="200" r="195" fill="none" stroke="#1B3A5C" stroke-width="10"/>
 
-  <!-- Vit bakgrund inuti guldringen -->
-  <circle cx="100" cy="100" r="77" fill="#FFFFFF"/>
+  <!-- Guldring (mellersta ring) -->
+  <circle cx="200" cy="200" r="175" fill="none" stroke="#C89F5D" stroke-width="8"/>
 
-  <!-- Guldring innanför -->
-  <circle cx="100" cy="100" r="80" fill="none" stroke="#C89F5D" stroke-width="6"/>
+  <!-- Solid vit bakgrund inuti guldringen - Detta tar bort rutmönstret! -->
+  <circle cx="200" cy="200" r="170" fill="#FFFFFF"/>
 
-  <!-- Brödrost bas - mörkblå -->
-  <g fill="#1B3A5C">
-    <!-- Brödrost kropp -->
-    <rect x="55" y="80" width="90" height="60" rx="4"/>
+  <!-- Brödrost-ikon med BD text inuti (mörkblå design) -->
+  <g fill="#1B3A5C" stroke="#1B3A5C">
+    <!-- Brödrost bas (huvudkropp) -->
+    <rect x="110" y="150" width="180" height="120" rx="8" fill="#1B3A5C" stroke-width="6"/>
 
-    <!-- Brödrost slots (ljusare detaljer) -->
-    <rect x="70" y="55" width="15" height="35" fill="#2D5580" rx="2"/>
-    <rect x="92.5" y="55" width="15" height="35" fill="#2D5580" rx="2"/>
-    <rect x="115" y="55" width="15" height="35" fill="#2D5580" rx="2"/>
+    <!-- Övre del med värmeelement-slots -->
+    <g fill="none" stroke="#1B3A5C" stroke-width="6">
+      <path d="M 140 140 Q 145 110, 155 100 Q 165 95, 175 95 Q 185 95, 195 100 Q 205 110, 210 140" fill="none" stroke="#C89F5D" stroke-width="5"/>
+      <path d="M 190 140 Q 195 110, 205 100 Q 215 95, 225 100 Q 235 110, 240 140" fill="none" stroke="#C89F5D" stroke-width="5"/>
+    </g>
 
-    <!-- Brödrost knapp -->
-    <rect x="85" y="145" width="30" height="8" rx="2" fill="#2D5580"/>
+    <!-- Brödrost-detaljer (kanter och konturer) -->
+    <rect x="115" y="155" width="170" height="110" rx="6" fill="none" stroke="#FFFFFF" stroke-width="4"/>
 
-    <!-- Dekorativa detaljer på sidan -->
-    <circle cx="63" cy="100" r="3" fill="#2D5580"/>
-    <circle cx="63" cy="115" r="3" fill="#2D5580"/>
-    <circle cx="137" cy="100" r="3" fill="#2D5580"/>
-    <circle cx="137" cy="115" r="3" fill="#2D5580"/>
+    <!-- Inre ram för BD-text -->
+    <rect x="130" y="170" width="140" height="80" rx="4" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+
+    <!-- Undre kontrollelement -->
+    <rect x="160" y="275" width="80" height="12" rx="3" fill="#1B3A5C"/>
+    <circle cx="200" cy="281" r="4" fill="#C89F5D"/>
+
+    <!-- Sidodetaljer (knappar/lampor) -->
+    <circle cx="125" cy="195" r="4" fill="#C89F5D"/>
+    <circle cx="275" cy="195" r="4" fill="#C89F5D"/>
   </g>
 
-  <!-- Text 'BD' i mitten med guldstil -->
-  <text x="100" y="115"
-        font-family="'Playfair Display', serif"
-        font-size="36"
+  <!-- BD Text i mitten av brödrosten -->
+  <text x="200" y="220"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="72"
         font-weight="900"
-        fill="#C89F5D"
+        fill="#1B3A5C"
         text-anchor="middle"
         dominant-baseline="middle"
-        stroke="#1B3A5C"
-        stroke-width="1">BD</text>
+        letter-spacing="2">BD</text>
 </svg>
