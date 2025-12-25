@@ -76,7 +76,6 @@ header {
   font-size: 3.5rem;
   font-weight: 900;
   color: var(--cream-bg);
-  text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
   letter-spacing: 3px;
   margin: 0;
   transition: all 0.3s ease;
@@ -84,8 +83,7 @@ header {
 
 /* Header Navigation Section */
 .header-nav {
-  background: linear-gradient(135deg, #2D5580 0%, var(--primary-blue) 100%);
-  box-shadow: 0 4px 12px var(--shadow-dark);
+  background: #1E5275;
   transition: all 0.3s ease;
 }
 
